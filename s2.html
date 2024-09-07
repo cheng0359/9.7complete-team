@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 1200px;
+            margin: auto;
+            border: 2px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .tabs label {
+            order: 1;
+            display: block;
+            padding: 1.5rem 3rem;
+            cursor: pointer;
+            background: #b4d495;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color ease 0.4s;
+            margin: 0;
+        }
+
+        .tabs label:nth-of-type(1) {
+            border-radius: 40px 0 0 40px;
+        }
+
+        .tabs label:nth-of-type(4) {
+            border-radius: 0 40px 40px 0;
+        }
+
+        .tabs .tab {
+            order: 99;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 3s ease, transform 3s ease;
+        }
+
+        .tabs input[type="radio"] {
+            display: none;
+        }
+
+        .tabs input[type="radio"]:checked+label {
+            background: #38bc4c;
+        }
+
+        .tabs input[type="radio"]:checked+label+.tab {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+            display: block;
+            position: static;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <input type="radio" name="tabs" id="tabone" checked>
+            <label for="tabone">Tab 1</label>
+            <div class="tab">
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content for Tab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content forTab 1</p>
+                <p>Content for Tab 1</p>
+            </div>
+
+            <input type="radio" name="tabs" id="tabtwo">
+            <label for="tabtwo">Tab 2</label>
+            <div class="tab">
+                <p>Content for Tab 2</p>
+            </div>
+
+            <input type="radio" name="tabs" id="tabthree">
+            <label for="tabthree">Tab 3</label>
+            <div class="tab">
+                <p>Content for Tab 3</p>
+            </div>
+
+            <input type="radio" name="tabs" id="tabfour">
+            <label for="tabfour">WIKI</label>
+            <div class="tab">
+                <p>Content for WIKI</p>
+            </div>
+        </div>
+    </div>
+    <section>233333333333333333333333</section>
+</body>
+
+</html>
