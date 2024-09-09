@@ -52,6 +52,19 @@
     clip-path: polygon(610px 0, 1200px 0, 1210px 600px);
 }
 
+.piece_image1 {
+    position: relative;
+    /* 有关如何让图片显示想要的部分，可以使用相对定位 */
+    right: 50px;
+}
+.piece_image2 {
+    position: relative;
+    /* 有关如何让图片显示想要的部分，可以使用相对定位 */
+    right: 500px;
+    bottom: 400px;
+   /* 有关如何让图片进行特写部分，可以使用scale*/
+    scale: 3;
+}
 .full-image {
     position: fixed;
     top: 0;

@@ -60,7 +60,7 @@
     width: 60px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 690px) {
 
     /* 当窗口宽度小于600px时应用的样式 */
     .icon1,
